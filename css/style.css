@@ -1,3 +1,97 @@
 .hidden {
   display: none;
 }
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#login-form {
+  z-index: 1;
+}
+
+#login-form input:first-child {
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+  background-color: wheat;
+  opacity: 0.5;
+  width: 300px;
+  height: 40px;
+  padding: 5px 10px;
+  font-size: 20px;
+}
+
+#login-form input:last-child {
+  border: none;
+  background-color: blueviolet;
+  border-radius: 5px;
+  width: 100px;
+  height: 40px;
+  padding: 5px 10px;
+}
+
+#greeting {
+  color: blueviolet;
+  z-index: 1;
+}
+
+#clock {
+  color: teal;
+  z-index: 1;
+}
+
+#quote {
+  color: darkslateblue;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#quote span {
+  display: block;
+}
+
+#todo-form {
+  z-index: 1;
+}
+
+#todo-form input {
+  background-color: beige;
+  opacity: 0.5;
+  border: none;
+  border-radius: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+  width: 300px;
+  height: 20px;
+  padding: 5px 20px;
+}
+
+#todo-list {
+  list-style: none;
+  margin-left: -150px;
+  z-index: 1;
+}
+
+#todo-list li span {
+  font-family: "Times New Roman", Times, serif;
+  color: deeppink;
+  font-size: 20px;
+}
+
+#weather {
+  z-index: 1;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.bgImage {
+  opacity: 0.3;
+  position: absolute;
+  z-index: 0;
+}
